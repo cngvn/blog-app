@@ -1,42 +1,76 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* max-height: 100vw;
+  max-width: 1180px; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.2s;
+  justify-content: space-between;
 }
 
-html,
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.card p {
+  color: #555;
+}
+
+.card .user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card .user-info img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.re {
+  border-color: #f9f9f9;
+  border-radius: 40px;
+  color: rgb(87, 213, 213);
+}
+
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.input {
+  display: flex;
+  justify-content: end;
+  border-radius: 10px;
+  width: 500px;
+  height: 20px;
+  border-style: groove;
+  border-color: rgb(136, 230, 235);
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.header{
+  color: beige;
+   
 }
